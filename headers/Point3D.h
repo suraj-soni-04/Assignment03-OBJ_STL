@@ -10,9 +10,9 @@ public:
     void setmY(double);
     void setmZ(double);
 
-    double getMX();
-    double getMY();
-    double getMZ();
+    double getMX() const;
+    double getMY() const;
+    double getMZ() const;
 
 private:
     double mX;
