@@ -1,5 +1,5 @@
 #pragma once
-#include<.\Triangulation.h>
+#include".\Triangulation.h"
 class ObjReader
 {
 public:
