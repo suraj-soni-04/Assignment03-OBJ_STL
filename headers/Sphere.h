@@ -1,5 +1,5 @@
 #pragma once
-#include <.\Point3D.h>
+#include ".\Point3D.h"
 class Sphere
 {
 public:
