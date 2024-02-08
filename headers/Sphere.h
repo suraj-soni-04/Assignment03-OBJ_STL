@@ -6,7 +6,7 @@ public:
     Sphere();
     Sphere(double,Point3D);
     ~Sphere();
-    double getVolume();
+    double getVolume() const;
 
 private:
     double mRadius;
