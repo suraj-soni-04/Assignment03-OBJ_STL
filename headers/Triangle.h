@@ -6,9 +6,9 @@ public:
     Triangle(int , int , int );
     ~Triangle();
 
-    int getVertex1();
-    int getVertex2();
-    int getVertex3();
+    int getVertex1() const;
+    int getVertex2() const;
+    int getVertex3() const;
 
     void setMvertex1(int);
     void setMvertex2(int);
