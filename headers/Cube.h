@@ -6,7 +6,7 @@ public:
     Cube(); 
     Cube(double,Point3D);
     ~Cube();
-    double getVolume();
+    double getVolume() const;
 private:
     double mSide;
     Point3D mPoint3D;
