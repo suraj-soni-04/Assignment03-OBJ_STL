@@ -1,6 +1,6 @@
 #pragma once
-#include<.\Triangle.h>
-#include<.\Point3D.h>
+#include".\Triangle.h"
+#include".\Point3D.h"
 #include<vector>
 #include<map>
 using namespace std;
