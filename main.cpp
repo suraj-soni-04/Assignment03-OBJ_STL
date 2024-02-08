@@ -4,18 +4,18 @@
 #include <chrono>
 #include <windows.h>
 #include <string.h>
-#include <..\headers\Cube.h>
-#include <..\headers\Cubiod.h>
-#include <..\headers\Point3D.h>
-#include <..\headers\Sphere.h>
-#include <..\headers\Triangle.h>
-#include <..\headers\Triangulation.h>
-#include <..\headers\STLWriter.h>
-#include <..\headers\STLReader.h>
-#include <..\headers\OBJWriter.h>
-#include <..\headers\OBJReader.h>
-#include <..\headers\STLtoOBJ.h>
-#include <..\headers\OBJToSTL.h>
+#include ".\headers\Cube.h"
+#include ".\headers\Cubiod.h"
+#include ".\headers\Point3D.h"
+#include ".\headers\Sphere.h"
+#include ".\headers\Triangle.h"
+#include ".\headers\Triangulation.h"
+#include ".\headers\STLWriter.h"
+#include ".\headers\STLReader.h"
+#include ".\headers\OBJWriter.h"
+#include ".\headers\OBJReader.h"
+#include ".\headers\STLtoOBJ.h"
+#include ".\headers\OBJToSTL.h"
 
 using namespace std;
 int main()
@@ -33,7 +33,7 @@ int main()
         if (ch == 1)
         {
             STLtoOBJConverter stlToObjConvertor;
-            string fromStlFilePath = "..\\stlFiles\\cube.stl";
+            string fromStlFilePath = ".\\stlFiles\\cube.stl";
             string toObjFilePath = ".\\convertedObjFiles\\cube.obj";
             cout << "Reading '.stl' file..." << endl;
             Sleep(3000);
@@ -47,8 +47,8 @@ int main()
         else if (ch == 2)
         {
             OBJtoSTLConverter objToStlConvertor;
-            string fromObjFilePath = "..\\objFiles\\cube.obj";
-            string toStlFilePath = "..\\convertedStlFiles\\cube.stl";
+            string fromObjFilePath = ".\\objFiles\\cube.obj";
+            string toStlFilePath = ".\\convertedStlFiles\\cube.stl";
             cout << "Reading '.obj' file..." << endl;
             Sleep(3000);
             cout << "Converting to '.stl' file" << endl;
@@ -61,8 +61,8 @@ int main()
         }
         else if (ch == 3)
         {
-            string inputFile = "..\\stlFiles\\cube.stl";
-            string outputFile = "..\\txtFiles\\file.txt";
+            string inputFile = ".\\stlFiles\\cube.stl";
+            string outputFile = ".\\txtFiles\\file.txt";
 
             STLReader stlReader;
             STLWriter stlWriter;
