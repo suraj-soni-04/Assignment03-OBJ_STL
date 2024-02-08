@@ -1,9 +1,8 @@
 #pragma once
 #include <string>
 #include <vector>
-#include ".\Triangle.h"
-#include<string>
 #include<unordered_map>
+#include ".\Triangle.h"
 using namespace std;
 
 class STLWriter
