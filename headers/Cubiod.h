@@ -6,7 +6,7 @@ public:
     Cubiod();
     Cubiod(double,double,double,Point3D);
     ~Cubiod();
-    double getVolume();
+    double getVolume() const;
 
 private:
     int mLength;
