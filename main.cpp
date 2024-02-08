@@ -17,47 +17,47 @@
 #include ".\headers\STLtoOBJ.h"
 #include ".\headers\OBJToSTL.h"
 
-using namespace std;
+
 int main()
 {
-     int ch;
+     int choice;
     while (1)
     {
-        cout << "1. Convert File (.STL --->.OBJ)" << endl;
-        cout << "2. Convert File (.OBJ --->.STL)" << endl;
-        cout << "3. Open .STL file in GNUPLOT" << endl;
-        cout << "4. Open .OBJ file in GNUPLOT" << endl;
-        cout << "5. Exit" << endl;
-        cout << "Enter your choice : ";
-        cin >> ch;
+        std::cout << "1. Convert File (.STL --->.OBJ)" << std::endl;
+        std::cout << "2. Convert File (.OBJ --->.STL)" << std::endl;
+        std::cout << "3. Open .STL file in GNUPLOT" << std::endl;
+        std::cout << "4. Open .OBJ file in GNUPLOT" << std::endl;
+        std::cout << "5. Exit" << std::endl;
+        std::cout << "Enter your choice : ";
+        std::cin >> choice;
         if (ch == 1)
         {
             STLtoOBJConverter stlToObjConvertor;
             string fromStlFilePath = ".\\stlFiles\\cube.stl";
             string toObjFilePath = ".\\convertedObjFiles\\cube.obj";
-            cout << "Reading '.stl' file..." << endl;
+            std::cout << "Reading '.stl' file..." << std::endl;
             Sleep(3000);
-            cout << "Converting to '.obj' file" << endl;
+            std::cout << "Converting to '.obj' file" << std::endl;
             Sleep(5000);
             stlToObjConvertor.stlToObjConvertor(fromStlFilePath, toObjFilePath);
             Sleep(2000);
-            cout << "Conversion Completed on the given path!" << endl;
-            cout << "\n";
+            std::cout << "Conversion Completed on the given path!" << std::endl;
+            std::cout << "\n";
         }
         else if (ch == 2)
         {
             OBJtoSTLConverter objToStlConvertor;
             string fromObjFilePath = ".\\objFiles\\cube.obj";
             string toStlFilePath = ".\\convertedStlFiles\\cube.stl";
-            cout << "Reading '.obj' file..." << endl;
+            std::cout << "Reading '.obj' file..." << std::endl;
             Sleep(3000);
-            cout << "Converting to '.stl' file" << endl;
+            std::cout << "Converting to '.stl' file" << std::endl;
             Sleep(5000);
             objToStlConvertor.objToStlConvertor(fromObjFilePath, toStlFilePath);
             Sleep(2000);
-            cout<<"** DONE **"<<endl;
-            cout << "Conversion Completed on the given path!" << endl;
-            cout << "\n";
+            std::cout<<"** DONE **"<<std::endl;
+            std::cout << "Conversion Completed on the given path!" << std::endl;
+            std::cout << "\n";
         }
         else if (ch == 3)
         {
@@ -75,17 +75,17 @@ int main()
             vector<Point3D> uniquePoints;
             vector<Triangle> uniqueTriangles;
 
-            cout << "*** STARTED ***" << endl;
+            std::cout << "*** STARTED ***" << std::endl;
             Sleep(3000);
-            cout << "Processing the '.stl' file...." << endl;
+            std::cout << "Processing the '.stl' file...." << std::endl;
             Sleep(5000);
             stlReader.fileReader(inputFile, points, triangles, mapping);
             Sleep(3000);
-            cout << "'.stl' file processed!..." << endl;
-            cout << "Converting to '.txt' file" << endl;
+            std::cout << "'.stl' file processed!..." << std::endl;
+            std::cout << "Converting to '.txt' file" << std::endl;
             Sleep(5000);
             stlWriter.fileWriter(outputFile, points, triangles, mapping);
-            cout << "*** END ***" << endl<<endl;
+            std::cout << "*** END ***" << std::endl<<std::endl;
         }
         else if (ch == 4)
         {
@@ -98,23 +98,23 @@ int main()
             vector<Point3D> uniquePoints = triangulation.getPoints();
             vector<Triangle> triangles = triangulation.getTriangles();
 
-            cout << "*** STARTED ***" << endl;
+            std::cout << "*** STARTED ***" << std::endl;
             Sleep(3000);
-            cout << "Processing the '.obj' file...." << endl;
+            std::cout << "Processing the '.obj' file...." << std::endl;
             Sleep(5000);
             objReader.fileReader(inputFile, uniquePoints, triangles);
             Sleep(3000);
-            cout << "'.obj' file processed!..." << endl;
-            cout << "Converting to '.txt' file" << endl;
+            std::cout << "'.obj' file processed!..." << std::endl;
+            std::cout << "Converting to '.txt' file" << std::endl;
             Sleep(5000);
             objWriter.fileWriter(outputFile, uniquePoints, triangles);
-            cout << "*** END ***" << endl<<endl;
+            std::cout << "*** END ***" << std::endl<<std::endl;
 
         }
         else if (ch == 5) break;
         else
         {
-            cout << "Invalid Choice..." << endl;
+            std::cout << "Invalid Choice..." << std::endl;
             continue;
         }
     }
