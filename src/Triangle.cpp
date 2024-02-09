@@ -1,7 +1,7 @@
-#include <..\headers\Triangle.h>
-#include <..\headers\Point3D.h>
 #include <iostream>
 #include <math.h>
+#include "..\headers\Triangle.h"
+#include "..\headers\Point3D.h"
 using namespace std;
 
 Triangle::Triangle(int vertex1, int vertex2, int vertex3)
@@ -14,15 +14,15 @@ Triangle::~Triangle()
 {
 }
 
-int Triangle::getVertex1()
+int Triangle::getVertex1() const
 {
     return this->mVertex1;
 }
-int Triangle::getVertex2()
+int Triangle::getVertex2() const
 {
     return this->mVertex2;
 }
-int Triangle::getVertex3()
+int Triangle::getVertex3() const
 {
     return this->mVertex3;
 }
