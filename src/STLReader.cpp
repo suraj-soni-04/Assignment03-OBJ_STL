@@ -1,7 +1,7 @@
-#include <..\headers\STLReader.h>
-#include <..\headers\Triangulation.h>
-#include <..\headers\Triangle.h>
-#include <..\headers\Point3D.h>
+#include "..\headers\STLReader.h"
+#include "..\headers\Triangulation.h"
+#include "..\headers\Triangle.h"
+#include "..\headers\Point3D.h"
 #include <vector>
 #include <unordered_map>
 #include <fstream>
