@@ -1,7 +1,6 @@
-#include <..\headers\Cubiod.h>
-#include <..\headers\Point3D.h>
 #include <iostream>
-using namespace std;
+#include "..\headers\Cubiod.h"
+#include "..\headers\Point3D.h"
 Cubiod::Cubiod()
 {
     this->mLength = 0.0;
@@ -18,7 +17,7 @@ Cubiod::Cubiod(double length, double breadth, double height, Point3D point3D)
 Cubiod::~Cubiod()
 {
 }
-double Cubiod::getVolume()
+double Cubiod::getVolume() const
 {
     return this->mLength * this->mBreadth * this->mHeight;
 }
