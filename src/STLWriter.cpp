@@ -1,13 +1,12 @@
-#include <vector>
-#include <..\headers\Triangle.h>
-#include <..\headers\Triangulation.h>
-#include <..\headers\Point3D.h>
-#include <..\headers\STLWriter.h>
-#include <vector>
 #include <unordered_map>
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <vector>
+#include "..\headers\Triangle.h"
+#include "..\headers\Triangulation.h"
+#include "..\headers\Point3D.h"
+#include "..\headers\STLWriter.h"
 using namespace std;
 void STLWriter::fileWriter(string filePath,vector<Point3D> &points,vector<Triangle> &triangles,unordered_map<int,Point3D> &mapping)
 {
