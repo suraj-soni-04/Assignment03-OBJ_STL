@@ -1,13 +1,13 @@
-#include <..\headers\OBJtoSTL.h>
-#include <..\headers\ObjReader.h>
-#include <..\headers\ObjWriter.h>
-#include <..\headers\Triangulation.h>
 #include <string>
 #include <iostream>
 #include <istream>
 #include <fstream>
 #include <ostream>
 #include <sstream>
+#include "..\headers\OBJtoSTL.h"
+#include "..\headers\ObjReader.h"
+#include "..\headers\ObjWriter.h"
+#include "..\headers\Triangulation.h"
 using namespace std;
 
 void OBJtoSTLConverter::objToStlConvertor(string &fromObjFilePath, string &toSTLFilePath)
