@@ -1,16 +1,14 @@
-#include <..\headers\STLtoOBJ.h>
-#include <..\headers\OBJtoSTL.h>
-#include <..\headers\STLReader.h>
-#include <..\headers\STLWriter.h>
-#include <..\headers\Triangulation.h>
-#include <..\headers\Point3D.h>
 #include <string>
 #include <iostream>
-#include <istream>
 #include <fstream>
-#include <ostream>
 #include <sstream>
-#include<unordered_map>
+#include <unordered_map>
+#include "..\headers\STLtoOBJ.h"
+#include "..\headers\OBJtoSTL.h"
+#include "..\headers\STLReader.h"
+#include "..\headers\STLWriter.h"
+#include "..\headers\Triangulation.h"
+#include "..\headers\Point3D.h"
 using namespace std;
 
 void STLtoOBJConverter::stlToObjConvertor(string &fromStlFilePath, string &toObjFilePath)
