@@ -1,7 +1,7 @@
-#include <..\headers\Sphere.h>
-#include <..\headers\Point3D.h>
 #include <iostream>
-#include<math.h>
+#include <math.h>
+#include "..\headers\Sphere.h"
+#include "..\headers\Point3D.h"
 using namespace std;
 
 Sphere::Sphere()
@@ -16,7 +16,7 @@ Sphere::Sphere(double radius,Point3D point3D)
 Sphere::~Sphere()
 {
 }
-double Sphere::getVolume()
+double Sphere::getVolume() const
 {
     return (4*M_PI*this->mRadius*this->mRadius*this->mRadius)/3;
 }
