@@ -1,5 +1,5 @@
-#include <..\headers\Point3D.h>
 #include <iostream>
+#include "..\headers\Point3D.h"
 using namespace std;
 Point3D::Point3D()
 {
@@ -28,15 +28,15 @@ void Point3D::setmZ(double z)
 {
     this->mZ=z;
 }
-double Point3D::getMX()
+double Point3D::getMX() const
 {
     return this->mX;
 }
-double Point3D::getMY()
+double Point3D::getMY() const
 {
     return this->mY;
 }
-double Point3D::getMZ()
+double Point3D::getMZ() const
 {
     return this->mZ;
 }
