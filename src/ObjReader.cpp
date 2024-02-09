@@ -1,9 +1,9 @@
-#include <..\headers\ObjReader.h>
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include "..\headers\ObjReader.h"
 using namespace std;
 void ObjReader::fileReader(string filePath, vector<Point3D> &uniquePoints, vector<Triangle> &triangles)
 {
