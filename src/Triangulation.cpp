@@ -1,9 +1,7 @@
-#include <..\headers\Triangulation.h>
 #include <iostream>
-#include <map>
 #include <vector>
+#include "..\headers\Triangulation.h"
 using namespace std;
-
 Triangulation::Triangulation()
 {
 
