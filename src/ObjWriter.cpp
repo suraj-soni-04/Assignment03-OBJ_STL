@@ -1,8 +1,8 @@
-#include <..\headers\ObjWriter.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include "..\headers\ObjWriter.h"
 using namespace std;
 void ObjWriter::fileWriter(string filePath,vector<Point3D> &uniquePoints, vector<Triangle> &triangles)
 {
